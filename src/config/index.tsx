@@ -9,7 +9,7 @@ if (!projectId) {
 }
 
 export const networks = [mantleSepoliaTestnet];
-
+console.log("networks", mantleSepoliaTestnet.id);
 export const wagmiAdapter = new WagmiAdapter({
   storage: createStorage({
     storage: cookieStorage,
