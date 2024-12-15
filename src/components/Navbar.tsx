@@ -111,10 +111,11 @@ export default function Navbar() {
           {!isConnected ? (
             <button
               className={`w-40 py-2 bg-[#0f1322] border border-white text-white hover:bg-white/10 hover:text-white truncate rounded-full
-             `}
-              onClick={openModal}
+              `}
+              // onClick={openModal}
             >
-              Connect Wallet
+              {/* @ts-ignore */}
+              <appkit-button />
             </button>
           ) : (
             <DropdownMenu>
