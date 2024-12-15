@@ -13,16 +13,10 @@ import {
 import { Input } from "@/components/ui/input";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import {
-  useAccount,
-  usePublicClient,
-  useWriteContract,
-  useWaitForTransactionReceipt,
-} from "wagmi";
+import { useAccount, usePublicClient, useWriteContract } from "wagmi";
 import { useToast } from "@/hooks/use-toast";
 import TradingViewWidget from "@/components/TradingView";
 import { useParams } from "next/navigation";
-import BigNumber from "bignumber.js";
 import { getSymbolPrice } from "@/lib/GetSymbolPrice";
 import { abi } from "@/contract/abi.json";
 

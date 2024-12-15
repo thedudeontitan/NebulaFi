@@ -20,7 +20,7 @@ const metadata = {
   icons: ["https://assets.reown.com/reown-profile-pic.png"],
 };
 
-const modal = createAppKit({
+export const modal = createAppKit({
   adapters: [wagmiAdapter],
   projectId,
   networks: [mantleSepoliaTestnet],

@@ -23,7 +23,7 @@ export default function Navbar() {
   const router = useRouter();
   const { address, isConnected } = useAppKitAccount();
   const { disconnect } = useDisconnect();
-  const { open, close } = useAppKit();
+  const { open } = useAppKit();
 
   useEffect(() => {
     console.log(address);
@@ -114,7 +114,7 @@ export default function Navbar() {
               `}
               // onClick={openModal}
             >
-              {/* @ts-ignore */}
+              {/* @ts-expect-error */}
               <appkit-button />
             </button>
           ) : (
