@@ -112,10 +112,9 @@ export default function Navbar() {
             <button
               className={`w-40 py-2 bg-[#0f1322] border border-white text-white hover:bg-white/10 hover:text-white truncate rounded-full
               `}
-              // onClick={openModal}
+              onClick={openModal}
             >
-              {/* @ts-expect-error */}
-              <appkit-button />
+              {/* <appkit-button /> */}
             </button>
           ) : (
             <DropdownMenu>
